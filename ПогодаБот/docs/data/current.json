@@ -1,0 +1,11 @@
+{
+  "city": "Нижневартовск",
+  "temperature_c": -1.4,
+  "humidity_pct": 79.8,
+  "wind_speed_mps": 8.1,
+  "wind_dir": "С",
+  "pressure_hpa": 1008.0,
+  "condition": "малооблачно",
+  "source": "api.met.no",
+  "updated_at_utc": "2026-04-08T06:00:00Z"
+}
