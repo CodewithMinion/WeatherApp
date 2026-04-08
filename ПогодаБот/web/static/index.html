@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Погода — Нижневартовск</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="header">
+        <div class="title">
+          <div class="h1">Погода</div>
+          <div class="sub" id="city">Нижневартовск</div>
+        </div>
+        <button class="btn ghost" id="refresh">Обновить</button>
+      </header>
+
+      <section class="card" id="currentCard">
+        <div class="row">
+          <div class="big" id="temp">—°C</div>
+          <div class="cond" id="cond">—</div>
+        </div>
+        <div class="grid">
+          <div class="kv"><div class="k">Влажность</div><div class="v" id="hum">—</div></div>
+          <div class="kv"><div class="k">Ветер</div><div class="v" id="wind">—</div></div>
+          <div class="kv"><div class="k">Давление</div><div class="v" id="press">—</div></div>
+          <div class="kv"><div class="k">Источник</div><div class="v" id="source">—</div></div>
+        </div>
+        <div class="error" id="error"></div>
+      </section>
+
+      <section class="card">
+        <div class="row between">
+          <div>
+            <div class="h2">Прогноз</div>
+            <div class="muted" id="note">—</div>
+          </div>
+          <button class="btn" id="loadForecast">Показать прогноз на месяц</button>
+        </div>
+        <div class="forecast" id="forecast"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+
